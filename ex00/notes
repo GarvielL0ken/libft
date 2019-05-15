@@ -1,0 +1,11 @@
+
+untested:
+	memset.c
+	ft_isalnum.c
+
+header_files:
+	memset
+	strlen
+	isalpha
+	isdigit
+	isalnum
