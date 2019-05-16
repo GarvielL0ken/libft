@@ -1,11 +1,39 @@
+to do
 
-untested:
+complete:
+	bzero
+	memcpy
+	memccpy
+	memmove
+	strdup
+	strcpy
+	strncpy
+	strcat
+	strncat
+	strlcat
+	strchr
+	strrchr
+	strstr
+	strcmp
+	strncmp
+	atoi
+
+test:
 	memset.c
+	memchr.c
+	memcmp.c
 	ft_isalnum.c
 
 header_files:
 	memset
+	memchr
+	memcmp
 	strlen
+	atoi
 	isalpha
 	isdigit
 	isalnum
+	isprint
+	toupper
+	tolower
+
