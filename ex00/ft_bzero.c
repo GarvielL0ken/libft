@@ -1,28 +1,15 @@
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
 #include "libft.h"
 
-void ft_putchar(char c)
+void ft_bzero(void *s, size_t n)
 {
-	write(1, &c, 1);
-}
+	char *buff;
+	size_t i;
 
-void bzero(void *s, size_t n)
-{
-	while (n > 0)
+	buff = (char *)s;
+	i = 0;
+	while (i < n)
 	{
-		memset(s, '\0', n);
-		s++;
-		n--;
+		buff[i] = 0;
+		i++;
 	}
-} 
-
-int main()
-{
-	char *str = "apple";
-	int i;
-
-	bzero(str, 5);
-	printf("%s\n", str);
 }

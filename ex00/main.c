@@ -7,7 +7,9 @@ int main(int argc, char const *argv[])
 	int i;
 	int j;
 	int k;
+	char *str;
 
+	i = 42;
 	if (argc != 1)
 	{
 		if (strcmp("atoi", argv[1]) == 0)
@@ -17,6 +19,7 @@ int main(int argc, char const *argv[])
 			printf("%d * 42 = %d\n", i, i * 42);
 			printf("%d ^ 2 = %d\n", i, i * i);
 		}
+		//if (bzero)
 		if (strcmp("isalnum", argv[1]) == 0)
 		{
 			i = ft_isalnum(*argv[2]);
@@ -37,6 +40,27 @@ int main(int argc, char const *argv[])
 			i = ft_isprint(*argv[2]);
 			printf("%d\n", i);
 		}
+		if (strcmp("itoa", argv[1]) == 0)
+		{
+			str = ft_itoa(i);
+			printf("The answer to life, the universe and everything is %s\n", str);
+		}
+		//if (memalloc)
 	}
 	return (0);
 }
+
+/*
+ft_isalpha.c 
+ft_isascii.c 
+ft_isdigit.c 
+ft_isprint.c 
+ft_itoa.c 
+ft_memalloc.c 
+ft_memccpy.c 
+ft_memchr.c 
+ft_memcmp.c  
+ft_memdel.c 
+ft_memmove.c 
+ft_order.c 
+*/
