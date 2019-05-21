@@ -49,18 +49,3 @@ int main(int argc, char const *argv[])
 	}
 	return (0);
 }
-
-/*
-ft_isalpha.c 
-ft_isascii.c 
-ft_isdigit.c 
-ft_isprint.c 
-ft_itoa.c 
-ft_memalloc.c 
-ft_memccpy.c 
-ft_memchr.c 
-ft_memcmp.c  
-ft_memdel.c 
-ft_memmove.c 
-ft_order.c 
-*/
