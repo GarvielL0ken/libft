@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:53:33 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 15:49:40 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 19:03:06 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,7 @@ char	*ft_itoa(int n)
 		negative = 1;
 		nbr = -nbr;
 	}
-
 	len = ft_order(nbr) + negative;
-		printf("%d\n", len);
 	str = (char *)malloc(len + 1);
 	str[len--] = '\0';
 	if (negative)

@@ -6,17 +6,16 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 09:41:43 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 10:38:39 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 19:16:40 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strcat(char *restrict s1, const char *restrict s2)
+char	*ft_strcat(char *restrict s1, const char *restrict s2)
 {
-	size_t len_s1;
-	int i;
-	printf("%p\n", s1);
+	size_t	len_s1;
+	int		i;
 
 	len_s1 = ft_strlen(s1);
 	i = 0;

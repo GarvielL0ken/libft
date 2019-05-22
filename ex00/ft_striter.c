@@ -6,8 +6,21 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 14:57:55 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 14:59:55 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 19:07:28 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	
+#include "libft.h"
+
+void	ft_striter(char *s, void (*f)(char *))
+{
+	int		i;
+	char	c;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		c = s[i++];
+		(*f)(&c);
+	}
+}

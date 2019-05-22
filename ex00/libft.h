@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:46:44 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 15:51:59 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 19:06:53 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,16 +79,21 @@
  void ft_strdel(char **as);
 
  void *ft_strdup(const char c);
+
+ void ft_striter(char *s, void (*f)(char *));
+
+ void ft_striteri(char *s, void (*f)(unsigned int, char *));
+
+ char *ft_strjoin(char const *s1, char const *s2);
  /* 
-  striter
-  striteri
-  strjoin
   strlcat
   */
   size_t ft_strlen(const char *str);
+
+  char *strmap(char const *s, char (*f)(char));
+
+  char ft_strmapi(char const 8s, char (*f)(unsigned int, char));
   /*
-  strmap
-  strmapi
   strncat
   strncmp
   strncpy
@@ -100,8 +105,9 @@
   strstr
   strsub
   strtrim
-  tolower
-  toupper
  */
+ int ft_tolower(int c);
+
+ int ft_toupper(int c);
 
 #endif
