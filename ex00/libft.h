@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:46:44 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 11:29:02 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 13:27:39 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,16 +64,20 @@
 
  void ft_putstr(char const *str);
 
- void ft_putstr_fd(char const *str, int fd)
+ void ft_putstr_fd(char const *str, int fd);
 	
  char *ft_strcat(char *restrict s1, const char *restrict s2);
 
- char *ft_strchar(const char *s, int c);
+ char *ft_strchr(const char *s, int c);
+
+ void ft_strclr(char *s);
+
+ int ft_strcmp(const char *s1, const char *s2);
+
+ char *ft_strcpy(char *dst, const char *src);
+
+ void ft_strdel(char **as);
  /* 
-  strclr
-  strcmp
-  strcpy
-  strdel
   strdup
   striter
   striteri

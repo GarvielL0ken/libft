@@ -6,12 +6,13 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:36:45 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 10:36:46 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 13:33:43 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "libft.h"
 
 int main(int argc, char const *argv[])
