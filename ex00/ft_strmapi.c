@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 18:50:40 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 19:09:18 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 19:52:47 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	{
 		c = s[i];
 		c = (*f)(i, c);
-		str[i++] = c;
+		str_res[i++] = c;
 	}
 	str_res[len] = '\0';
 	return (str_res);

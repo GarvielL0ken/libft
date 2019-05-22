@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:46:44 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 19:06:53 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 19:53:53 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@
 
  void ft_strdel(char **as);
 
- void *ft_strdup(const char c);
+ char *ft_strdup(const char *s1);
 
  void ft_striter(char *s, void (*f)(char *));
 
@@ -90,9 +90,9 @@
   */
   size_t ft_strlen(const char *str);
 
-  char *strmap(char const *s, char (*f)(char));
+  char *ft_strmap(char const *s, char (*f)(char));
 
-  char ft_strmapi(char const 8s, char (*f)(unsigned int, char));
+  char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
   /*
   strncat
   strncmp

@@ -6,11 +6,11 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 11:31:13 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 11:47:25 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 19:48:54 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_strclr(char *s)
 {
@@ -19,5 +19,4 @@ void	ft_strclr(char *s)
 		*s = '\0';
 		s++;
 	}
-	printf("%s", s);
 }

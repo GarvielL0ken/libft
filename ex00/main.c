@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:36:45 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 15:41:26 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 19:54:02 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
 	int k;
 	char *str;
 
-	i = 2147483648;
+	i = 43;
 	if (argc != 1)
 	{
 		if (strcmp("atoi", argv[1]) == 0)
