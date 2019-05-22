@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:46:44 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 15:48:38 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 15:51:59 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@
 
  void *ft_memset(void *b, int c, size_t len);
 
- int ft_order(int n);
+ long ft_order(long n);
 
  void ft_putchar(char c);
 
