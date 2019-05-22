@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:46:44 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 10:48:44 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 11:29:02 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,8 +67,9 @@
  void ft_putstr_fd(char const *str, int fd)
 	
  char *ft_strcat(char *restrict s1, const char *restrict s2);
+
+ char *ft_strchar(const char *s, int c);
  /* 
-  strchr
   strclr
   strcmp
   strcpy
