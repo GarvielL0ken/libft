@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/05/22 10:46:44 by jsarkis           #+#    #+#             */
+/*   Updated: 2019/05/22 10:48:44 by jsarkis          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
@@ -30,9 +42,9 @@
 
  void *ft_memcpy(void *dest, const void *src, size_t n);
 
- void *ft_memdel(void **ap);
+ void ft_memdel(void **ap);
 
- void *ft_memmove(void *dest, const void *src, size_t n);
+ void ft_memmove(void *dest, const void *src, size_t n);
 
  void *ft_memset(void *b, int c, size_t len);
 
@@ -52,9 +64,10 @@
 
  void ft_putstr(char const *str);
 
- void ft_putstr_fd(char const *str, int fd);
+ void ft_putstr_fd(char const *str, int fd)
+	
+ char *ft_strcat(char *restrict s1, const char *restrict s2);
  /* 
-  strcat
   strchr
   strclr
   strcmp

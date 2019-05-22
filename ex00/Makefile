@@ -26,7 +26,7 @@ all: lib
 	gcc main.c -L. -lft
 
 lib:
-	gcc -c $(SRC)
+	gcc -Wall -Werror -Wextra -c $(SRC)
 	ar rc libft.a *.o
 
 clean:
