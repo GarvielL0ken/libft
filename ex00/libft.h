@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:46:44 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 13:27:39 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 15:48:38 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,8 +77,9 @@
  char *ft_strcpy(char *dst, const char *src);
 
  void ft_strdel(char **as);
+
+ void *ft_strdup(const char c);
  /* 
-  strdup
   striter
   striteri
   strjoin

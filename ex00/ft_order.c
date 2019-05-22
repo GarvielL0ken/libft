@@ -6,13 +6,13 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 11:05:05 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 11:07:44 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 15:45:29 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_order(int n)
+long	ft_order(long n)
 {
 	if (n >= 10)
 		return (ft_order(n / 10) + 1);

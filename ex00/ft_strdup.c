@@ -6,13 +6,11 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 11:08:08 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 14:17:27 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/22 14:57:43 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include "ft_strlen.c"
+#include "libft.h"
 
 char *ft_strdup(const char *s1)
 {
@@ -30,19 +28,4 @@ char *ft_strdup(const char *s1)
 	}
 	str_dup[i] = '\0';
 	return (str_dup);
-}
-
-int main()
-{
-	char *str_1;
-	char *str_2;
-	int i;
-	
-	i = 0;	
-	str_1 = (char *)malloc(6);
-	while (i < 5)
-		str_1[i++] = 'a';
-	str[i] = '\0';
-	str_2 = ft_strdup(str_1);
-	printf("%s\n", str_2);
 }
