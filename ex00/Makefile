@@ -16,7 +16,11 @@ SRC = ft_atoi.c \
 	  ft_memset.c \
 	  ft_order.c \
 	  ft_putchar.c \
-	  ft_putchar_fd.c
+	  ft_putchar_fd.c \
+	  ft_putstr.c \
+	  ft_putstr_fd.c \
+	  \
+	  ft_strlen.c
 
 all: lib
 	gcc main.c -L. -lft

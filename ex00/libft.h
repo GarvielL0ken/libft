@@ -48,7 +48,41 @@
 
  void ft_putnbr(int n);
 
- void ft_putnbr(int n, int fd);
+ void ft_putnbr_fd(int n, int fd);
 
  void ft_putstr(char const *str);
+
+ void ft_putstr_fd(char const *str, int fd);
+ /* 
+  strcat
+  strchr
+  strclr
+  strcmp
+  strcpy
+  strdel
+  strdup
+  striter
+  striteri
+  strjoin
+  strlcat
+  */
+  size_t ft_strlen(const char *str);
+  /*
+  strmap
+  strmapi
+  strncat
+  strncmp
+  strncpy
+  strnequ
+  strnew
+  strnstr
+  strrchr
+  strsplit
+  strstr
+  strsub
+  strtrim
+  tolower
+  toupper
+ */
+
 #endif
