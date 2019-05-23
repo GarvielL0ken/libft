@@ -26,6 +26,7 @@ SRC = ft_atoi.c \
 	  ft_strcpy.c \
 	  ft_strdel.c \
 	  ft_strdup.c \
+	  ft_strequ.c \
 	  ft_striter.c \
 	  ft_striteri.c \
 	  ft_strjoin.c \
@@ -34,7 +35,17 @@ SRC = ft_atoi.c \
 	  ft_strmap.c \
 	  ft_strmapi.c \
 	  ft_strncat.c \
-	  ft_strncmp.c
+	  ft_strncmp.c \
+	  ft_strnequ.c \
+	  ft_strnew.c \
+	  ft_strnstr.c \
+	  ft_strrchr.c \
+	  \
+	  ft_strstr.c \
+	  \
+	  \
+	  ft_tolower.c \
+	  ft_toupper.c
 
 all: lib
 	gcc main.c -L. -lft
