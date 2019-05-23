@@ -6,15 +6,12 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 14:32:49 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/23 15:21:56 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/23 16:14:05 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
-#include "ft_strlen.c"
-#include "ft_putchar.c"
-#include "ft_putchar_fd.c"
 
 char **ft_strsplit(char const *s, char c)
 {

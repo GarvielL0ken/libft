@@ -6,13 +6,8 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 18:32:55 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 18:39:48 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/23 16:12:20 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
-{
-	
-}

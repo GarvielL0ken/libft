@@ -11,6 +11,7 @@ SRC = ft_atoi.c \
 	  ft_memccpy.c \
 	  ft_memchr.c \
 	  ft_memcmp.c \
+	  ft_memcpy.c \
 	  ft_memdel.c \
 	  ft_memmove.c \
 	  ft_memset.c \
@@ -30,7 +31,7 @@ SRC = ft_atoi.c \
 	  ft_striter.c \
 	  ft_striteri.c \
 	  ft_strjoin.c \
-	  \
+	  ft_strncpy.c \
 	  ft_strlen.c \
 	  ft_strmap.c \
 	  ft_strmapi.c \
@@ -47,12 +48,15 @@ SRC = ft_atoi.c \
 	  ft_tolower.c \
 	  ft_toupper.c
 
-all: lib
-	gcc main.c -L. -lft
-
-lib:
+all:
 	gcc -Wall -Werror -Wextra -c $(SRC)
 	ar rc libft.a *.o
+	ranlib libft.a
+
+so:
+	gcc -Wall -Werror -Wextra -c $(SRC)
+	gcc -shared -o libft.so -fPIC ft*.c
+	rm *.o
 
 clean:
 	rm *.o
