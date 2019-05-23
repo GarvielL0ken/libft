@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:46:44 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 19:53:53 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/23 09:44:53 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,13 +88,14 @@
  /* 
   strlcat
   */
-  size_t ft_strlen(const char *str);
+ size_t ft_strlen(const char *str);
 
-  char *ft_strmap(char const *s, char (*f)(char));
+ char *ft_strmap(char const *s, char (*f)(char));
 
-  char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+ char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+ char *ft_strncat(char *s1, const char *s2, size_t n); 
   /*
-  strncat
   strncmp
   strncpy
   strnequ

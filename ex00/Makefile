@@ -32,7 +32,8 @@ SRC = ft_atoi.c \
 	  \
 	  ft_strlen.c \
 	  ft_strmap.c \
-	  ft_strmapi.c
+	  ft_strmapi.c \
+	  ft_strncat.c
 
 all: lib
 	gcc main.c -L. -lft
