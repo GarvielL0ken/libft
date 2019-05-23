@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 12:11:53 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 19:08:58 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/23 11:05:28 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,10 @@
 
 char	*ft_strcpy(char *dst, const char *src)
 {
-	int i;
+	size_t len_src;
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
+	len_src = ft_strlen(src);
+	dst = ft_strncpy(dst, src, len_src);
+	dst[len_src] = '\0';
 	return (dst);
 }

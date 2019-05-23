@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:46:44 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/23 10:05:39 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/23 10:51:44 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,8 +97,9 @@
  char *ft_strncat(char *s1, const char *s2, size_t n);
 
  int ft_strncmp(const char *s1, const char *s2, size_t n);
+
+ char *ft_strncpy(char *dst, const char *src, size_t len);
   /*
- strncpy
  strnequ
  strnew
  strnstr
