@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:46:44 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/23 09:49:10 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/23 10:05:39 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,18 +94,19 @@
 
  char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
- char *ft_strncat(char *s1, const char *s2, size_t n); 
+ char *ft_strncat(char *s1, const char *s2, size_t n);
+
+ int ft_strncmp(const char *s1, const char *s2, size_t n);
   /*
-  strncmp
-  strncpy
-  strnequ
-  strnew
-  strnstr
-  strrchr
-  strsplit
-  strstr
-  strsub
-  strtrim
+ strncpy
+ strnequ
+ strnew
+ strnstr
+ strrchr
+ strsplit
+ strstr
+ strsub
+ strtrim
  */
  int ft_tolower(int c);
 
