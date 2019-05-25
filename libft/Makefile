@@ -36,6 +36,7 @@ SRC = ft_atoi.c \
 	  ft_striteri.c \
 	  ft_strjoin.c \
 	  ft_strncpy.c \
+	  ft_strlcat.c \
 	  ft_strlen.c \
 	  ft_strmap.c \
 	  ft_strmapi.c \
@@ -45,10 +46,10 @@ SRC = ft_atoi.c \
 	  ft_strnew.c \
 	  ft_strnstr.c \
 	  ft_strrchr.c \
-	  \
+	  ft_strsplit.c \
 	  ft_strstr.c \
-	  \
-	  \
+	  ft_strsub.c \
+	  ft_strtrim.c \
 	  ft_tolower.c \
 	  ft_toupper.c
 
@@ -68,3 +69,5 @@ clean:
 fclean: clean
 	rm libft.a
 	rm a.*
+
+re: all clean

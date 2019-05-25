@@ -6,13 +6,13 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 11:10:28 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/23 12:00:05 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/25 10:52:47 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strnequ(char const *s1, char const *s2, size_t n)
+int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	int i;
 

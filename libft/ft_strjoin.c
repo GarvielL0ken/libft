@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 17:57:18 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/22 19:25:34 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/25 11:20:52 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	len_1 = ft_strlen(s1);
 	len_2 = ft_strlen(s2);
 	str_new = malloc(len_1 + len_2 + 1);
+	if (!str_new)
+		return (NULL);
 	i = 0;
 	while (i < len_1 + len_2)
 	{
