@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/25 10:35:27 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/25 10:49:29 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/05/26 14:24:55 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 
 void	ft_memdel(void **ap);
 
-void	ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_memmove(void *dest, const void *src, size_t n);
 
 void	*ft_memset(void *b, int c, size_t len);
 
@@ -107,5 +107,9 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strnew(size_t size);
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+
+int		ft_num_words(char const *s, char c);
+
+char	*ft_find_str(char const *s, char c, int start);
 
 #endif
