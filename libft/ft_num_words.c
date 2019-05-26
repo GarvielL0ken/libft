@@ -1,37 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_num_words.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/26 12:05:48 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/26 13:55:39 by jsarkis          ###   ########.fr       */
+/*   Created: 2019/05/26 13:30:05 by jsarkis           #+#    #+#             */
+/*   Updated: 2019/05/26 13:33:51 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strstr(const char *haystack, const char *needle)
+int		ft_num_words(char const *s, char c)
 {
-	int i;
-	int j;
+	int	i;
+	int	count;
 
-	i = 0;
-	if (needle[0] == '\0')
-		return ((char *)haystack);
-	while (haystack[i] != '\0')
+	i = 1;
+	count = 0;
+	if (s[0] != c)
+		count++;
+	while (s[i] != '\0')
 	{
-		j = 0;
-		while (haystack[i + j] == needle[j])
-		{
-			if (needle[j + 1] == '\0')
-			{
-				return ((char *)haystack + i);
-			}
-			j++;
-		}
+		if (s[i - 1] == c && s[i] != c)
+			count++;
 		i++;
 	}
-	return (0);
+	return (count);
 }
