@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 11:10:42 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/06/13 11:29:57 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/06/13 12:10:41 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ void				ft_putstr(char const *str);
 
 void				ft_putstr_fd(char const *str, int fd);
 
-char				*ft_str_reaalloc(char **str, size_t size);
+char				*ft_str_realloc(char **str, size_t size);
 
 char				*ft_strcat(char *s1, const char *s2);
 
