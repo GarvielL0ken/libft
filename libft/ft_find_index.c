@@ -1,36 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_find_index.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/23 09:53:34 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/06/13 11:41:28 by jsarkis          ###   ########.fr       */
+/*   Created: 2019/06/10 16:55:03 by jsarkis           #+#    #+#             */
+/*   Updated: 2019/06/10 16:57:35 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_find_index(char *str, char to_find)
 {
-	size_t	i;
-	int		diff;
+	int pos;
 
-	i = 0;
-	while (i < n)
-	{
-		diff = (unsigned char)s1[i] - (unsigned char)s2[i];
-		if (diff != 0 || s1[i] == '\0')
-		{
-			if (diff < 0)
-				return (-1);
-			else if (diff > 0)
-				return (1);
-			else
-				return (0);
-		}
-		i++;
-	}
-	return (0);
+	pos = 0;
+	while (str[pos] != to_find && str[pos] != '\0')
+		pos++;
+	if (str[pos] == '\0' && to_find != '\0')
+		pos = -1;
+	return (pos);
 }
