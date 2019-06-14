@@ -6,25 +6,26 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 10:39:28 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/05/30 14:30:45 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/06/14 16:00:45 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_loop_for_atoi(const char *str, int i, long n, int negative)
+static int	ft_loop_for_atoi(const char *str, int i, int negative)
 {
+	long n;
+
+	n = 0;
 	while (str[i] != '\0' && (ft_isdigit(str[i])))
 	{
 		n = n + str[i] - '0';
-		n = n * 10;
-		if (n < 0)
+		if ((n * 10) < 0)
 		{
 			if (negative > 0)
 				return (-1);
-			else
-				return (0);
 		}
+		n = n * 10;
 		i++;
 	}
 	n = (n / 10) * negative;
@@ -34,22 +35,17 @@ static int	ft_loop_for_atoi(const char *str, int i, long n, int negative)
 int			ft_atoi(const char *str)
 {
 	int		i;
-	long	n;
+	int		valid;
 	int		negative;
 
-	n = 0;
 	negative = 1;
 	i = 0;
-	while (!ft_isdigit(str[i]) && str[i] != '-')
-	{
-		if (str[i] == '\e')
-			return (0);
+	valid = 1;
+	while (ft_is_white_space(str[i]))
 		i++;
-	}
 	if (str[i] == '-')
 		negative = -1;
 	if (str[i] == '+' || str[i] == '-')
 		i++;
-	n = ft_loop_for_atoi(str, i, n, negative);
-	return (n);
+	return (ft_loop_for_atoi(str, i, negative));
 }

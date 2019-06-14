@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 11:10:42 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/06/13 12:10:41 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/06/14 15:37:51 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ int					ft_atoi(const char *str);
 void				ft_bzero(void *s, size_t n);
 
 char				*ft_find_str(char const *s, char c, int start);
+
+int					ft_is_white_space(char c);
 
 int					ft_isalnum(int c);
 
