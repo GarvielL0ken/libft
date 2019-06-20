@@ -6,12 +6,13 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 11:10:42 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/06/14 15:37:51 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/06/20 14:41:25 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFF_SIZE 1
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
@@ -153,5 +154,7 @@ int					ft_tolower(int c);
 int					ft_toupper(int c);
 
 int					ft_find_index(char *str, char to_find);
+
+int					get_next_line(const int fd, char **line);
 
 #endif
