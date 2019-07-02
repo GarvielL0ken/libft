@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 11:10:42 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/06/20 14:41:25 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/07/02 12:42:44 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,6 +130,8 @@ int					ft_strncmp(const char *s1, const char *s2, size_t n);
 
 char				*ft_strncpy(char *dst, const char *src, size_t len);
 
+int					ft_strncpyi(char **dst, const char src, int len, int dest_index);
+
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 
 char				*ft_strnew(size_t size);
@@ -154,7 +156,5 @@ int					ft_tolower(int c);
 int					ft_toupper(int c);
 
 int					ft_find_index(char *str, char to_find);
-
-int					get_next_line(const int fd, char **line);
 
 #endif
