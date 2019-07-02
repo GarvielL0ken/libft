@@ -6,7 +6,7 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 11:10:42 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/07/02 12:49:30 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/07/02 18:51:15 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,11 @@ void				ft_putstr(char const *str);
 
 void				ft_putstr_fd(char const *str, int fd);
 
+void				ft_str_char_set(char **str, char to_set, int index);
+
 char				*ft_str_realloc(char **str, size_t size);
+
+char				*ft_str_shift(char *str, int shift_size);
 
 char				*ft_strcat(char *s1, const char *s2);
 
@@ -130,7 +134,8 @@ int					ft_strncmp(const char *s1, const char *s2, size_t n);
 
 char				*ft_strncpy(char *dst, const char *src, size_t len);
 
-int					ft_strncpyi(char **dst, const char *src, int len, int dest_index);
+int					ft_strncpyi(char **dst, const char *src, int len, \
+						int dest_index);
 
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 
