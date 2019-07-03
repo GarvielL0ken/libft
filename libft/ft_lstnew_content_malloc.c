@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpyi.c                                      :+:      :+:    :+:   */
+/*   ft_lstnew_content_malloc.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/02 12:36:16 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/07/02 19:08:33 by jsarkis          ###   ########.fr       */
+/*   Created: 2019/07/03 13:33:41 by jsarkis           #+#    #+#             */
+/*   Updated: 2019/07/03 13:36:09 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncpyi(char **dst, const char *src, int len, int dst_index)
-{
-	int	i;
+#include "libft.h"
 
-	i = 0;
-	while (src[i] && i != len)
-	{
-		*(*dst + dst_index) = src[i];
-		i++;
-		dst_index++;
-	}
-	*(*dst + dst_index) = '\0';
-	return (dst_index);
+t_list	*ft_lstnew_content_malloc(size_t size, size_t content_size)
+{
+	t_list	*new;
+
+	new = (t_list *)malloc(sizeof(t_list));
+	new->content = ft_strnew(size);
+	new->content_size = content_size;
+	new->next = NULL;
+	return (new);
 }

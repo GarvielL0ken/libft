@@ -6,13 +6,12 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 11:10:42 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/07/02 18:51:15 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/07/03 13:42:41 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# define BUFF_SIZE 1
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
@@ -48,6 +47,8 @@ void				ft_lstadd(t_list **alst, t_list *new);
 
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 
+void				ft_lstdel_c(void *content, size_t content_size);
+
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
@@ -55,6 +56,8 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 t_list				*ft_lstnew(void const *content, size_t constent_size);
+
+t_list				*ft_lstnew_content_malloc(size_t size, size_t content_size);
 
 void				*ft_memalloc(size_t size);
 
