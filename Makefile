@@ -5,25 +5,34 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/06/14 14:00:05 by jsarkis           #+#    #+#              #
-#    Updated: 2019/06/14 15:29:25 by jsarkis          ###   ########.fr        #
+#    Created: 2019/05/26 13:47:49 by jsarkis           #+#    #+#              #
+#    Updated: 2019/05/26 14:15:06 by jsarkis          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-all:
-	gcc main.c -L./libft -lft
+NAME = libft.a
+CFLAGS = -Wall -Werror -Wextra -I. -c
+SRC := $(wildcard *.c)
 
-atoi_11: all
-	./a.out atoi "++876"
+OBJ = $(SRC:%.c=%.o)
 
-atoi_17: all
-	./a.out atoi "       32 "
+all: $(NAME)
 
-atoi_18: all
-	./a.out atoi test_18
+$(NAME): $(OBJ)
+	ar rcs $(NAME) $(OBJ)
 
-atoi_27: all
-	./a.out atoi "+-1"
+$(OBJ): $(SRC)
+	gcc $(CFLAGS) $(SRC)
 
-atoi_30: all
-	./a.out atoi test_30
+so:
+	gcc -Wall -Werror -Wextra -c $(SRC)
+	gcc -shared -o libft.so -fPIC ft*.c
+	rm *.o
+
+clean:
+	rm -f $(OBJ)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
