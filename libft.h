@@ -6,12 +6,14 @@
 /*   By: jsarkis <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 11:10:42 by jsarkis           #+#    #+#             */
-/*   Updated: 2019/07/03 13:42:41 by jsarkis          ###   ########.fr       */
+/*   Updated: 2019/07/09 11:05:21 by jsarkis          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFF_SIZE 50
+# include <fcntl.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
@@ -26,6 +28,8 @@ typedef struct		s_list
 int					ft_atoi(const char *str);
 
 void				ft_bzero(void *s, size_t n);
+
+int					ft_find_index(char *str, char to_find);
 
 char				*ft_find_str(char const *s, char c, int start);
 
@@ -163,6 +167,12 @@ int					ft_tolower(int c);
 
 int					ft_toupper(int c);
 
-int					ft_find_index(char *str, char to_find);
+int					get_next_line(const int fd, char **line);
+
+int					get_next_line_lst(const int fd, char **line);
+
+int					gnl_main_loop(const int fd, char **line, char **buff);
+
+void				prep_buff(char **buff);
 
 #endif
